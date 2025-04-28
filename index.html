@@ -19,8 +19,8 @@
     <div class="theme-toggle">
       <input type="checkbox" id="theme-switch" class="theme-switch" />
       <label for="theme-switch" class="switch-label">
-        <span class="sun"
-          ><svg
+        <span class="sun">
+          <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             width="24"
@@ -29,10 +29,11 @@
             <path fill="none" d="M0 0h24v24H0z" />
             <path
               d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"
-            /></svg
-        ></span>
-        <span class="moon"
-          ><svg
+            />
+          </svg>
+        </span>
+        <span class="moon">
+          <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             width="24"
@@ -41,8 +42,9 @@
             <path fill="none" d="M0 0h24v24H0z" />
             <path
               d="M10 7a7 7 0 0 0 12 4.9v.1c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2h.1A6.979 6.979 0 0 0 10 7zm-6 5a8 8 0 0 0 15.062 3.762A9 9 0 0 1 8.238 4.938 7.999 7.999 0 0 0 4 12z"
-            /></svg
-        ></span>
+            />
+          </svg>
+        </span>
       </label>
     </div>
 
@@ -60,7 +62,6 @@
           <ul class="nav-links">
             <li><a href="#algo1" class="nav-link">Algo 1 - Exact</a></li>
             <li><a href="#algo4" class="nav-link">Algo 4 - Core Exact</a></li>
-            <li><a href="#comparison" class="nav-link">Comparison</a></li>
             <li><a href="#team" class="nav-link">Team</a></li>
           </ul>
         </nav>
@@ -68,6 +69,7 @@
     </header>
 
     <main>
+      <!-- Algo 1 Section -->
       <section id="algo1" class="section">
         <div class="container">
           <h2 class="section-title reveal-text">Algorithm 1 - Exact</h2>
@@ -75,6 +77,7 @@
             The Exact algorithm for finding maximum cliques in a graph.
           </p>
 
+          <!-- Dataset: AS-733 -->
           <div class="dataset-container reveal-item">
             <h3 class="dataset-title">Dataset: AS-733</h3>
             <div class="graph-gallery">
@@ -107,6 +110,7 @@
             </div>
           </div>
 
+          <!-- Dataset: AS-Caida -->
           <div class="dataset-container reveal-item">
             <h3 class="dataset-title">Dataset: AS-Caida</h3>
             <div class="graph-gallery">
@@ -139,6 +143,7 @@
             </div>
           </div>
 
+          <!-- Dataset: Ca-HepTh -->
           <div class="dataset-container reveal-item">
             <h3 class="dataset-title">Dataset: Ca-HepTh</h3>
             <div class="graph-gallery">
@@ -171,6 +176,7 @@
             </div>
           </div>
 
+          <!-- Dataset: Netscience -->
           <div class="dataset-container reveal-item">
             <h3 class="dataset-title">Dataset: Netscience</h3>
             <div class="graph-gallery">
@@ -205,6 +211,7 @@
             </div>
           </div>
 
+          <!-- Dataset: Yeast -->
           <div class="dataset-container reveal-item">
             <h3 class="dataset-title">Dataset: Yeast</h3>
             <div class="graph-gallery">
@@ -239,6 +246,7 @@
         </div>
       </section>
 
+      <!-- Algo 4 Section -->
       <section id="algo4" class="section">
         <div class="container">
           <h2 class="section-title reveal-text">Algorithm 4 - Core Exact</h2>
@@ -256,30 +264,13 @@
         </div>
       </section>
 
-      <section id="comparison" class="section">
-        <div class="container">
-          <h2 class="section-title reveal-text">Comparison</h2>
-          <p class="section-description reveal-text">
-            Comparative analysis of different algorithms for clique detection.
-          </p>
-          <div class="coming-soon reveal-item">
-            <div class="pulse-animation"></div>
-            <h3>Coming Soon</h3>
-            <p>
-              This section is currently under development. Check back soon for
-              detailed analysis and visualizations.
-            </p>
-          </div>
-        </div>
-      </section>
-
+      <!-- Team Section -->
       <section id="team" class="section">
         <div class="container">
           <h2 class="section-title reveal-text">Team Members</h2>
           <p class="section-description reveal-text">
             The minds behind the analysis.
           </p>
-
           <div class="team-container reveal-item">
             <div class="team-member">
               <div class="member-avatar">DL</div>
@@ -288,7 +279,6 @@
                 <p>2022A7PS1377H</p>
               </div>
             </div>
-
             <div class="team-member">
               <div class="member-avatar">AA</div>
               <div class="member-details">
@@ -296,7 +286,6 @@
                 <p>2022A7PS1367H</p>
               </div>
             </div>
-
             <div class="team-member">
               <div class="member-avatar">SM</div>
               <div class="member-details">
@@ -304,7 +293,6 @@
                 <p>2022A7PS0036H</p>
               </div>
             </div>
-
             <div class="team-member">
               <div class="member-avatar">SG</div>
               <div class="member-details">
@@ -312,7 +300,6 @@
                 <p>2022A7PS1318H</p>
               </div>
             </div>
-
             <div class="team-member">
               <div class="member-avatar">AW</div>
               <div class="member-details">

@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DAA Assignment 2</title>
+
+    <!-- fonts & styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,6 +18,7 @@
     <link rel="stylesheet" href="styles/animations.css" />
   </head>
   <body>
+    <!-- ───────────────────  DARK/LIGHT TOGGLE  ──────────────────── -->
     <div class="theme-toggle">
       <input type="checkbox" id="theme-switch" class="theme-switch" />
       <label for="theme-switch" class="switch-label">
@@ -52,6 +55,7 @@
       <div class="progress-bar" id="progress-bar"></div>
     </div>
 
+    <!-- ────────────────────  HEADER / NAV  ───────────────────────── -->
     <header class="glass-header">
       <div class="container">
         <h1 class="title-animated">DAA Assignment 2</h1>
@@ -60,27 +64,35 @@
         </p>
         <nav>
           <ul class="nav-links">
-            <li><a href="#algo1" class="nav-link">Algo 1 - Exact</a></li>
-            <li><a href="#algo4" class="nav-link">Algo 4 - Core Exact</a></li>
+            <li>
+              <a href="#algo1" class="nav-link">Algo&nbsp;1&nbsp;- Exact</a>
+            </li>
+            <li>
+              <a href="#algo4" class="nav-link"
+                >Algo&nbsp;4&nbsp;- Core Exact</a
+              >
+            </li>
             <li><a href="#team" class="nav-link">Team</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
+    <!-- ==========================   MAIN   ========================= -->
     <main>
-      <!-- Algo 1 Section -->
+      <!-- ──────────────────  ALGORITHM 1 — Exact  ────────────────── -->
       <section id="algo1" class="section">
         <div class="container">
           <h2 class="section-title reveal-text">Algorithm 1 - Exact</h2>
           <p class="section-description reveal-text">
-            The Exact algorithm for finding maximum cliques in a graph.
+            The exact algorithm for finding maximum cliques in a graph.
           </p>
 
-          <!-- Dataset: AS-733 -->
+          <!-- ===== AS-733 ===== -->
           <div class="dataset-container reveal-item">
             <h3 class="dataset-title">Dataset: AS-733</h3>
             <div class="graph-gallery">
+              <!-- edge density -->
               <div class="graph-card">
                 <div class="graph-image">
                   <img
@@ -89,11 +101,9 @@
                     loading="lazy"
                   />
                 </div>
-                <div class="graph-details">
-                  <h4>Edge Density Histogram</h4>
-                  <p>Distribution of edge densities in the AS-733 dataset.</p>
-                </div>
+                <div class="graph-details"><h4>Edge Density Histogram</h4></div>
               </div>
+              <!-- execution time -->
               <div class="graph-card">
                 <div class="graph-image">
                   <img
@@ -104,13 +114,12 @@
                 </div>
                 <div class="graph-details">
                   <h4>Execution Time vs Graph Size</h4>
-                  <p>Analysis of execution time as the graph size increases.</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Dataset: AS-Caida -->
+          <!-- ===== AS-Caida ===== -->
           <div class="dataset-container reveal-item">
             <h3 class="dataset-title">Dataset: AS-Caida</h3>
             <div class="graph-gallery">
@@ -122,10 +131,7 @@
                     loading="lazy"
                   />
                 </div>
-                <div class="graph-details">
-                  <h4>Edge Density Histogram</h4>
-                  <p>Distribution of edge densities in the AS-Caida dataset.</p>
-                </div>
+                <div class="graph-details"><h4>Edge Density Histogram</h4></div>
               </div>
               <div class="graph-card">
                 <div class="graph-image">
@@ -137,13 +143,12 @@
                 </div>
                 <div class="graph-details">
                   <h4>Execution Time vs Graph Size</h4>
-                  <p>Analysis of execution time as the graph size increases.</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Dataset: Ca-HepTh -->
+          <!-- ===== Ca-HepTh ===== -->
           <div class="dataset-container reveal-item">
             <h3 class="dataset-title">Dataset: Ca-HepTh</h3>
             <div class="graph-gallery">
@@ -155,10 +160,7 @@
                     loading="lazy"
                   />
                 </div>
-                <div class="graph-details">
-                  <h4>Edge Density Histogram</h4>
-                  <p>Distribution of edge densities in the Ca-HepTh dataset.</p>
-                </div>
+                <div class="graph-details"><h4>Edge Density Histogram</h4></div>
               </div>
               <div class="graph-card">
                 <div class="graph-image">
@@ -170,13 +172,12 @@
                 </div>
                 <div class="graph-details">
                   <h4>Execution Time vs Graph Size</h4>
-                  <p>Analysis of execution time as the graph size increases.</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Dataset: Netscience -->
+          <!-- ===== Netscience ===== -->
           <div class="dataset-container reveal-item">
             <h3 class="dataset-title">Dataset: Netscience</h3>
             <div class="graph-gallery">
@@ -188,12 +189,7 @@
                     loading="lazy"
                   />
                 </div>
-                <div class="graph-details">
-                  <h4>Edge Density Histogram</h4>
-                  <p>
-                    Distribution of edge densities in the Netscience dataset.
-                  </p>
-                </div>
+                <div class="graph-details"><h4>Edge Density Histogram</h4></div>
               </div>
               <div class="graph-card">
                 <div class="graph-image">
@@ -205,13 +201,12 @@
                 </div>
                 <div class="graph-details">
                   <h4>Execution Time vs Graph Size</h4>
-                  <p>Analysis of execution time as the graph size increases.</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Dataset: Yeast -->
+          <!-- ===== Yeast ===== -->
           <div class="dataset-container reveal-item">
             <h3 class="dataset-title">Dataset: Yeast</h3>
             <div class="graph-gallery">
@@ -223,10 +218,7 @@
                     loading="lazy"
                   />
                 </div>
-                <div class="graph-details">
-                  <h4>Edge Density Histogram</h4>
-                  <p>Distribution of edge densities in the Yeast dataset.</p>
-                </div>
+                <div class="graph-details"><h4>Edge Density Histogram</h4></div>
               </div>
               <div class="graph-card">
                 <div class="graph-image">
@@ -238,7 +230,6 @@
                 </div>
                 <div class="graph-details">
                   <h4>Execution Time vs Graph Size</h4>
-                  <p>Analysis of execution time as the graph size increases.</p>
                 </div>
               </div>
             </div>
@@ -246,25 +237,363 @@
         </div>
       </section>
 
-      <!-- Algo 4 Section -->
+      <!-- ─────────────────  ALGORITHM 4 — Core Exact  ───────────────── -->
       <section id="algo4" class="section">
         <div class="container">
           <h2 class="section-title reveal-text">Algorithm 4 - Core Exact</h2>
           <p class="section-description reveal-text">
-            The Core Exact algorithm for finding maximum cliques in a graph.
+            Edge-density and execution-time behaviour of the core-exact
+            algorithm (h-clique versions h = 2, 3, 4) on every dataset.
           </p>
-          <div class="coming-soon reveal-item">
-            <div class="pulse-animation"></div>
-            <h3>Coming Soon</h3>
-            <p>
-              This section is currently under development. Check back soon for
-              detailed analysis and visualizations.
-            </p>
+
+          <!-- ========= AS-733 ========= -->
+          <div class="dataset-container reveal-item">
+            <h3 class="dataset-title">Dataset: AS-733</h3>
+            <div class="graph-gallery">
+              <!-- ED h=2,3,4 -->
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/As-733/Edge-Density/h=2.png"
+                    loading="lazy"
+                    alt="AS-733 Edge Density h=2"
+                  />
+                </div>
+                <div class="graph-details"><h4>Edge Density (h = 2)</h4></div>
+              </div>
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/As-733/Edge-Density/h=3.png"
+                    loading="lazy"
+                    alt="AS-733 Edge Density h=3"
+                  />
+                </div>
+                <div class="graph-details"><h4>Edge Density (h = 3)</h4></div>
+              </div>
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/As-733/Edge-Density/h=4.png"
+                    loading="lazy"
+                    alt="AS-733 Edge Density h=4"
+                  />
+                </div>
+                <div class="graph-details"><h4>Edge Density (h = 4)</h4></div>
+              </div>
+              <!-- ET h=2,3,4 -->
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/As-733/Execution_Time/h=2.png"
+                    loading="lazy"
+                    alt="AS-733 Execution Time h=2"
+                  />
+                </div>
+                <div class="graph-details"><h4>Execution Time (h = 2)</h4></div>
+              </div>
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/As-733/Execution_Time/h=3.png"
+                    loading="lazy"
+                    alt="AS-733 Execution Time h=3"
+                  />
+                </div>
+                <div class="graph-details"><h4>Execution Time (h = 3)</h4></div>
+              </div>
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/As-733/Execution_Time/h=4.png"
+                    loading="lazy"
+                    alt="AS-733 Execution Time h=4"
+                  />
+                </div>
+                <div class="graph-details"><h4>Execution Time (h = 4)</h4></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ========= AS-Caida ========= -->
+          <div class="dataset-container reveal-item">
+            <h3 class="dataset-title">Dataset: AS-Caida</h3>
+            <div class="graph-gallery">
+              <!-- ED -->
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/As-Caida/Edge-Density/h=2.png"
+                    loading="lazy"
+                    alt="AS-Caida Edge Density h=2"
+                  />
+                </div>
+                <div class="graph-details"><h4>Edge Density (h = 2)</h4></div>
+              </div>
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/As-Caida/Edge-Density/h=3.png"
+                    loading="lazy"
+                    alt="AS-Caida Edge Density h=3"
+                  />
+                </div>
+                <div class="graph-details"><h4>Edge Density (h = 3)</h4></div>
+              </div>
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/As-Caida/Edge-Density/h=4.png"
+                    loading="lazy"
+                    alt="AS-Caida Edge Density h=4"
+                  />
+                </div>
+                <div class="graph-details"><h4>Edge Density (h = 4)</h4></div>
+              </div>
+              <!-- ET -->
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/As-Caida/Execution-Time/h=2.png"
+                    loading="lazy"
+                    alt="AS-Caida Execution Time h=2"
+                  />
+                </div>
+                <div class="graph-details"><h4>Execution Time (h = 2)</h4></div>
+              </div>
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/As-Caida/Execution-Time/h=3.png"
+                    loading="lazy"
+                    alt="AS-Caida Execution Time h=3"
+                  />
+                </div>
+                <div class="graph-details"><h4>Execution Time (h = 3)</h4></div>
+              </div>
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/As-Caida/Execution-Time/h=4.png"
+                    loading="lazy"
+                    alt="AS-Caida Execution Time h=4"
+                  />
+                </div>
+                <div class="graph-details"><h4>Execution Time (h = 4)</h4></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ========= Ca-HepTh ========= -->
+          <div class="dataset-container reveal-item">
+            <h3 class="dataset-title">Dataset: Ca-HepTh</h3>
+            <div class="graph-gallery">
+              <!-- ED -->
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/Ca-HepTh/Edge-Density/h=2.png"
+                    loading="lazy"
+                    alt="Ca-HepTh Edge Density h=2"
+                  />
+                </div>
+                <div class="graph-details"><h4>Edge Density (h = 2)</h4></div>
+              </div>
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/Ca-HepTh/Edge-Density/h=3.png"
+                    loading="lazy"
+                    alt="Ca-HepTh Edge Density h=3"
+                  />
+                </div>
+                <div class="graph-details"><h4>Edge Density (h = 3)</h4></div>
+              </div>
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/Ca-HepTh/Edge-Density/h=4.png"
+                    loading="lazy"
+                    alt="Ca-HepTh Edge Density h=4"
+                  />
+                </div>
+                <div class="graph-details"><h4>Edge Density (h = 4)</h4></div>
+              </div>
+              <!-- ET -->
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/Ca-HepTh/Execution-Time/h=2.png"
+                    loading="lazy"
+                    alt="Ca-HepTh Execution Time h=2"
+                  />
+                </div>
+                <div class="graph-details"><h4>Execution Time (h = 2)</h4></div>
+              </div>
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/Ca-HepTh/Execution-Time/h=3.png"
+                    loading="lazy"
+                    alt="Ca-HepTh Execution Time h=3"
+                  />
+                </div>
+                <div class="graph-details"><h4>Execution Time (h = 3)</h4></div>
+              </div>
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/Ca-HepTh/Execution-Time/h=4.png"
+                    loading="lazy"
+                    alt="Ca-HepTh Execution Time h=4"
+                  />
+                </div>
+                <div class="graph-details"><h4>Execution Time (h = 4)</h4></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ========= Netscience ========= -->
+          <div class="dataset-container reveal-item">
+            <h3 class="dataset-title">Dataset: Netscience</h3>
+            <div class="graph-gallery">
+              <!-- ED -->
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/Netscience/Edge-Density/h=2.png"
+                    loading="lazy"
+                    alt="Netscience Edge Density h=2"
+                  />
+                </div>
+                <div class="graph-details"><h4>Edge Density (h = 2)</h4></div>
+              </div>
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/Netscience/Edge-Density/h=3.png"
+                    loading="lazy"
+                    alt="Netscience Edge Density h=3"
+                  />
+                </div>
+                <div class="graph-details"><h4>Edge Density (h = 3)</h4></div>
+              </div>
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/Netscience/Edge-Density/h=4.png"
+                    loading="lazy"
+                    alt="Netscience Edge Density h=4"
+                  />
+                </div>
+                <div class="graph-details"><h4>Edge Density (h = 4)</h4></div>
+              </div>
+              <!-- ET -->
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/Netscience/Execution-Time/h=2.png"
+                    loading="lazy"
+                    alt="Netscience Execution Time h=2"
+                  />
+                </div>
+                <div class="graph-details"><h4>Execution Time (h = 2)</h4></div>
+              </div>
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/Netscience/Execution-Time/h=3.png"
+                    loading="lazy"
+                    alt="Netscience Execution Time h=3"
+                  />
+                </div>
+                <div class="graph-details"><h4>Execution Time (h = 3)</h4></div>
+              </div>
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/Netscience/Execution-Time/h=4.png"
+                    loading="lazy"
+                    alt="Netscience Execution Time h=4"
+                  />
+                </div>
+                <div class="graph-details"><h4>Execution Time (h = 4)</h4></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ========= Yeast ========= -->
+          <div class="dataset-container reveal-item">
+            <h3 class="dataset-title">Dataset: Yeast</h3>
+            <div class="graph-gallery">
+              <!-- ED -->
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/Yeast/Edge-Density/h=2.png"
+                    loading="lazy"
+                    alt="Yeast Edge Density h=2"
+                  />
+                </div>
+                <div class="graph-details"><h4>Edge Density (h = 2)</h4></div>
+              </div>
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/Yeast/Edge-Density/h=3.png"
+                    loading="lazy"
+                    alt="Yeast Edge Density h=3"
+                  />
+                </div>
+                <div class="graph-details"><h4>Edge Density (h = 3)</h4></div>
+              </div>
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/Yeast/Edge-Density/h=4.png"
+                    loading="lazy"
+                    alt="Yeast Edge Density h=4"
+                  />
+                </div>
+                <div class="graph-details"><h4>Edge Density (h = 4)</h4></div>
+              </div>
+              <!-- ET -->
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/Yeast/Execution-Task/h=2.png"
+                    loading="lazy"
+                    alt="Yeast Execution Time h=2"
+                  />
+                </div>
+                <div class="graph-details"><h4>Execution Time (h = 2)</h4></div>
+              </div>
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/Yeast/Execution-Task/h=3.png"
+                    loading="lazy"
+                    alt="Yeast Execution Time h=3"
+                  />
+                </div>
+                <div class="graph-details"><h4>Execution Time (h = 3)</h4></div>
+              </div>
+              <div class="graph-card">
+                <div class="graph-image">
+                  <img
+                    src="Graphs/Graphs/algorithm4/Yeast/Execution-Task/h=4.png"
+                    loading="lazy"
+                    alt="Yeast Execution Time h=4"
+                  />
+                </div>
+                <div class="graph-details"><h4>Execution Time (h = 4)</h4></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Team Section -->
+      <!-- ─────────────────────────  TEAM  ────────────────────────── -->
       <section id="team" class="section">
         <div class="container">
           <h2 class="section-title reveal-text">Team Members</h2>
@@ -312,6 +641,7 @@
       </section>
     </main>
 
+    <!-- ────────────────────────  FOOTER  ────────────────────────── -->
     <footer>
       <div class="container">
         <p>
@@ -322,6 +652,7 @@
       </div>
     </footer>
 
+    <!-- scripts -->
     <script src="js/main.js"></script>
     <script src="js/animations.js"></script>
   </body>
